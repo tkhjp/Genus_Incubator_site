@@ -1,0 +1,5 @@
+nclude LICENSE
+include README.rst
+recursive-include editor/static *
+recursive-include editor/templates *
+recursive-include docs *

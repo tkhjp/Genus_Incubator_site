@@ -1,0 +1,57 @@
+Metadata-Version: 1.1
+Name: django-editor
+Version: 0.1
+Summary: A simple Django app to editor math question
+Home-page: UNKNOWN
+Author: TKH
+Author-email: summertkh134@gmail.com
+License: MIT License
+Description-Content-Type: UNKNOWN
+Description: 1. Add "polls" to your INSTALLED_APPS setting like this::
+        
+            INSTALLED_APPS = [
+                ...
+                'editor',
+                'ckeditor',
+                'ckeditor_uploader',
+                'django_mysql',
+            ]
+        
+        2. Change the Database setting in setting.py like this ::
+        
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.mysql',
+                'NAME': '',
+                'USER': '',
+                'PASSWORD': '',
+                'HOST': '',
+                'PORT': '3306',
+                'OPTIONS': {
+                    # Tell MySQLdb to connect with 'utf8mb4' character set
+                    'charset': 'utf8mb4',
+                },
+            }
+        }
+        
+        
+        3. Include the polls URLconf in your project urls.py like this::
+        
+            path('editor/', include('editor.urls')),
+        
+        4. Run `python manage.py migrate` to create the polls models.
+        
+        5. Start the development server and visit http://127.0.0.1:8000/admin/
+           
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
